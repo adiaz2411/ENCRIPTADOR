@@ -1,0 +1,301 @@
+*{
+    margin-left: 20%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+}
+head,script{
+    display: none;
+}
+
+
+/* CSS para todo body*/
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background:#7a7672;
+    height: 100vh;
+    
+       
+}
+.btn-pri{
+    height: 70px;
+    width: 300px;
+    background-color: #fb9a1e;
+    border: #fb9a1e;
+    border-radius: 15px;
+}
+.btn-borrar{
+    height: 50px;
+    width:200px;
+    background:#fb9a1e;
+    border-radius: 15px;
+    border: black;
+
+}
+.btn{   
+    border-radius: 24px;
+    font-size: 20px;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-0.5rem,-0.5rem);
+    transition: transform .2s cubic-bezier(5.0,1.56,.64,1);
+}
+.btn:hover{
+    transform: translate(0,-0);
+    cursor: pointer;
+}
+
+.textarea{
+    resize: none;
+    border: none;
+}
+.textarea:focus{
+    outline: none;
+}
+.block{
+    width: 1440px;
+    height: 100vh;
+    margin: 0 auto;
+}
+.encriptador,.input,.output{
+    margin-top: 10px;
+    padding-left: 30px;
+   
+}
+.encriptador{
+    display: flex;
+    justify-content: space-around;
+   
+}
+.logo-alura{
+    margin-top: 20px;
+    height: 30%;
+    padding-left: 10px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+
+}
+.input,.output{
+    display: flex;
+}
+/* CSS para input*/
+.input{
+    height: 90%;
+    align-self: center;
+
+}
+.input__form{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 30px;
+}
+.text{
+    height: 80%;
+    padding: 10px;
+    font-size: 32px;
+    line-height: 150%;
+    background:black;
+    border-radius: 15px;
+    color: #ffe13f;
+}
+.text::placeholder{
+    color:#ecc351;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+
+}
+.input__messaje{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+.img_vector{
+    position: absolute;
+    left: 0;
+    color: #495057;
+}
+.vector{
+    position: absolute;
+    font-size: 15px;
+    line-height: 150%;
+    color: black;
+    left: 20px;
+}
+.btn__Borrar{
+    height: 50px;
+    width: 200px;
+    font-size: 15px;
+    font-weight: 530;
+    line-height: 19px;
+    text-transform: uppercase;
+    background:black ;
+    color:#fb9a1e;
+    border: 3px solid ;
+    border-radius: 10px;
+
+}
+.btn__Borrar:hover{
+    background-image: url("/ENCRIPTADOR BATMAN/img/risa-guason.png");
+    background-repeat: no-repeat ;
+    background-position: center;
+    background-size: contain;
+    background-color: black;
+    color: black;
+    font-size: 1px;
+    border: 3px solid ;
+    border-color: black;
+}
+.botones{
+    display: flex;
+    gap: 20px;
+
+}
+.btn__Enc,.btn__Desenc{
+    background:black ;
+    border-radius: 24px;
+    color: #fb9a1e;
+    background-position: center;
+    border: 5px solid #fb9a1e;
+    height: 70px;
+    width: 300px;
+    text-transform: uppercase;
+    border-radius: 15px;
+}
+
+.btn__Enc:hover{
+    background-image: url("/ENCRIPTADOR BATMAN/img/logo.png");
+    background-repeat: no-repeat ;
+    background-position: center;
+    background-size: contain;
+    background-color: #fb9a1e;
+    color: black;
+    font-size: 1px;
+    border-radius: 15px;
+}
+.btn__Desenc:hover{
+    background-image: url("/ENCRIPTADOR BATMAN/img/logog.png");
+    background-repeat: no-repeat ;
+    background-position: center;
+    background-size: contain;
+    background-color: #00804b;
+    color: black;
+    font-size: 1px;
+    border-color: #00804b;
+    border-radius: 15px;
+}
+/* CSS para output*/
+
+.output{
+    height: 90%;
+    width: 400px;
+    align-self: center;
+    
+}
+.output__form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: black;
+    border-radius: 15px;
+}
+.output__st{
+    background-color: inherit;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 5;
+    border-radius: 15px;
+}
+.text__o{
+    height: 110%;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 28px;
+    line-height: 150%;
+    padding: 15px;
+    color: #ffe13f;
+    border-radius: 15px;
+}
+.btn__Copiar{
+    background:black ;
+    border-radius: 24px;
+    text-transform: uppercase;
+    color: #fb9a1e;
+    border: 5px solid #fb9a1e;
+    height: 70px;
+    width: 300px;
+    border-radius: 15px;;
+}
+.btn__Copiar:hover{
+    background-image: url("/ENCRIPTADOR BATMAN/img/logo4.png");
+    background-repeat: no-repeat ;
+    background-position: center;
+    background-size: contain;
+    background-color: #ffe13f;
+    border-color: #ffe13f;
+    color: black;
+    font-size: 1px;
+    border-radius: 15px;
+}
+.op__deck{
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    background: black;
+    border-radius: 15px;
+}
+
+.op__img{
+    object-fit: cover;
+    width:100%;
+    height:50%;
+}
+.op__p1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ecc351;
+}
+
+.op__p2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #ecc351;
+}
+
+/*CSS para footer*/
+
+
+.piepag{
+    gap: 50px;
+    align-items: center;
+    flex-direction: column;
+}
+.devep{
+    
+    gap: 5px;
+}
+.alura{
+    height: 3%;
+    
+}

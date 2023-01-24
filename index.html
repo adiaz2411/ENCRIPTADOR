@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Textos</title>
+    <link rel="stylesheet" href="/ENCRIPTADOR BATMAN/reset.css">
+    <link rel="stylesheet" href="/ENCRIPTADOR BATMAN/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="block">
+        <div class="encriptador">
+            <img class="logo-alura" src="/ENCRIPTADOR BATMAN/img/fict.png" alt="logo_alura">
+        </div>
+        <section class="input">
+            <form class="input__form" action="">
+                <textarea class="text textarea" id="texto" type="text" placeholder="Ingrese el texto aquí" ></textarea>
+                <div class="input__messaje">
+                    <img src="/ENCRIPTADOR BATMAN/img/Vector.png" alt="vector" class="img_vector">
+                    <p class="vector"> Solo letras minúsculas y sin acentos</p>
+                    <button class="btn-borrar" value="borrar" ><span class="btn btn__Borrar">Borrar</span></button>
+                </div>
+                <div class="botones">
+                    <button class="btn-pri" id="btn-Encrip" value="Encriptar" ><span class="btn btn__Enc">Encriptar</span></button>
+                    <button class="btn-pri" id="btn-Desencrip" value="Desencriptar" ><span class="btn btn__Desenc">Desencriptar</span></button>
+                </div>
+            </form>
+        </section>
+
+        <section class="output">
+            <form  class="output__form" action="">
+                <div class="output__st">
+                    <textarea class="text__o textarea" name="tA" id="tA"></textarea>
+                    <button class="btn-pri" id="btn-Cop" value="Copiar"><span class="btn btn__Copiar" >Copiar</span></button>
+                </div>
+                <div id="deck" class="op__deck">
+                    <img class="op__img" src="/ENCRIPTADOR BATMAN/img/black-batman.jpg">
+                    <p class="op__p1">Ningún mensaje fue encontrado</p>
+                    <p class="op__p2">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </form>
+        </section>
+
+       
+
+        <script src="/ENCRIPTADOR BATMAN/main.js"></script>
+    </div>
+
+</body>
+</html>
